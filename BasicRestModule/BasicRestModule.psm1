@@ -131,7 +131,6 @@ function Get-DeviceBitlockerRecoveryKey {
         "Authorization" = "Bearer $bearerToken"
     }
     $keyResponse = Invoke-RestMethod "https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys?`$filter=deviceId eq '$deviceId'" -Method 'GET' -Headers $headers
-    #$keyResponse.value[0].id
 
     $keyResponse.value | Foreach-Object {
         Get-BLRecoveryKey -bearerToken $bearerToken -rKeyId $_.id | ConvertTo-Json
