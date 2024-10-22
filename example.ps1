@@ -1,6 +1,6 @@
 # Include some stuff
 . ".\RestSecrets.ps1"
-Import-Module RestModule
+Import-Module BasicRestModule
 
 # Set example runtime variables
 $runtimeGroupId = 'groupIdStringGoesHere'
