@@ -6,6 +6,7 @@ There's nothing fancy about this super basic Powershell module; it's intended to
 ## Installation/Configuration/Use
 1. Copy the `BasicRestModule` directory to your PS modules path or add this directory to your `PSModulePath`
 2. Edit the `RestSecrets.ps1` file to use your own tenant ID, client ID, and client secret values
+   * **VERY IMPORTANT NOTE:** If you clone this repo and edit the secrets file, you run the risk of accidentally committing your secrets. Adjust/Plan accordingly. 
 3. Edit lines 6-15 of `example.ps1` to use valid ID strings (e.g. bogus value `372fc89a-42f0-4f6c-b165-273055550fd9`) for:
    1. Group ID
    2. User ID
